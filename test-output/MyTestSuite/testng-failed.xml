@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsninja.listener.MyListener"/>
+  </listeners>
+  <test thread-count="5" name="RegressionTests(failed)">
+    <classes>
+      <class name="com.tutorialsninja.testCases.AddToCart">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyAddingTheProductFromWishlist"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.testCases.AddToCart -->
+    </classes>
+  </test> <!-- RegressionTests(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->
